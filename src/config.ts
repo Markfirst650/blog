@@ -94,7 +94,7 @@ export const siteConfig: SiteConfig = {
 		src: {
 			desktop: [
 				"/assets/desktop-banner/16.jpg",
-				"/assets/desktop-banner/12.jpg",
+				"/assets/desktop-banner/11.jpg",
 				"/assets/desktop-banner/7.jpg",
 				"/assets/desktop-banner/8.jpg",
 				"/assets/desktop-banner/9.jpg",
