@@ -330,7 +330,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/2.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "空 柏",
 	bio: "世界那么大，我想去看看",
 	typewriter: {
