@@ -135,7 +135,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "山花落尽，我心犹青", // 主页横幅主标题
+			title: "我真牛逼", // 主页横幅主标题
 
 			subtitle: [
 				"生命的每条折痕里我即雪山",
