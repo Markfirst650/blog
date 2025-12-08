@@ -1,93 +1,44 @@
 ---
-title: Markdown Extended Features
-published: 2024-05-01
-updated: 2024-11-29
-description: 'Read more about Markdown features in Mizuki'
+title: 日常随笔
+published: 2025-12-09
+updated: 2025-12-09
+description: '捣鼓了那么久的第一篇文章'
 image: ''
-tags: [Demo, Example, Markdown, mizuki]
-category: 'Examples'
+tags: [树洞]
+category: '随笔'
 draft: false 
 ---
 
-## GitHub Repository Cards
-You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API. 
+## GitHub 仓库卡片
+我知道了，我可以通过这种方式添加github仓库卡片
 
+::github{repo="Markfirst650/ai"}
+
+用这个格式 `::github{repo="markfirst650/ai"}`.
+
+```markdown
 ::github{repo="matsuzaka-yuki/Mizuki"}
-
-Create a GitHub repository card with the code `::github{repo="matsuzaka-yuki/Mizuki"}`.
-
-```markdown
-::github{repo="matsuzaka-yuki/Mizuki"}
 ```
 
-## Admonitions
+## 随便说两句
 
-Following types of admonitions are supported: `note` `tip` `important` `warning` `caution`
+这个东西也搞了挺长时间的了  
+说长其实也不算长  
+只是我觉得时间特别的漫长而已  
+购买云服务器11月29号到今天12月9号也才不过10天  
+连域名备案都还没通过呢  
+正真开始搞这个博客差不多也就是三四天前  
+每天都会花很多时间来捣鼓各种东西  
+一开始连官方文档都看不懂的傻小子  
+到现在整个博客大概是以什么方式搭建的都能说出来个所以然了  
+期间也学到了不少服务器相关的知识  
+比如如何去部署一些开源的项目，如何使用docker，如何修改配置文件  
+遇到的所以问题都是我自己独立解决的（虽然chatgpt，gemini功不可没）  
+到现在为止，总共完成了
+>评论系统本地部署  
+>网站统计功能本地部署  
+>meting api本地部署  
+>音乐库navidrome部署  
+>meting连接navidrome播放自定义歌曲  
 
-:::note
-Highlights information that users should take into account, even when skimming.
-:::
-
-:::tip
-Optional information to help a user be more successful.
-:::
-
-:::important
-Crucial information necessary for users to succeed.
-:::
-
-:::warning
-Critical content demanding immediate user attention due to potential risks.
-:::
-
-:::caution
-Negative potential consequences of an action.
-:::
-
-### Basic Syntax
-
-```markdown
-:::note
-Highlights information that users should take into account, even when skimming.
-:::
-
-:::tip
-Optional information to help a user be more successful.
-:::
-```
-
-### Custom Titles
-
-The title of the admonition can be customized.
-
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
-
-```markdown
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
-```
-
-### GitHub Syntax
-
-> [!TIP]
-> [The GitHub syntax](https://github.com/orgs/community/discussions/16925) is also supported.
-
-```
-> [!NOTE]
-> The GitHub syntax is also supported.
-
-> [!TIP]
-> The GitHub syntax is also supported.
-```
-
-### Spoiler
-
-You can add spoilers to your text. The text also supports **Markdown** syntax.
-
-The content :spoiler[is hidden **ayyy**]!
-
-```markdown
-The content :spoiler[is hidden **ayyy**]!
+哈哈这一路走来真不容易呢

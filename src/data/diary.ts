@@ -19,6 +19,7 @@ const diaryData: DiaryItem[] = [
 			"The falling speed of cherry blossoms is five centimeters per second!",
 		date: "2025-01-15T10:30:00Z",
 		images: ["/images/diary/sakura.jpg", "/images/diary/1.jpg"],
+		tags: ["nature", "spring"],
 	},
 ];
 
@@ -79,13 +80,14 @@ export const getDiaryByTag = (tag: string) => {
 
 // 获取所有标签
 export const getAllTags = () => {
-	const tags = new Set<string>();
-	diaryData.forEach((item) => {
-		if (item.tags) {
-			item.tags.forEach((tag) => tags.add(tag));
-		}
-	});
-	return Array.from(tags).sort();
+	// 1. 使用 flatMap 扁平化所有日记条目的标签数组
+	const allTags = diaryData.flatMap((item) => item.tags || []);
+
+	// 2. 使用 Set 进行去重
+	const uniqueTags = new Set(allTags);
+
+	// 3. 转换为数组并排序
+	return Array.from(uniqueTags).sort();
 };
 
 export default diaryData;
