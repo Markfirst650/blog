@@ -373,7 +373,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 export const commentConfig: CommentConfig = {
 	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
-		envId: "http://43.139.163.131:8080/",
+		envId: "http://twikoo.solmount.top/",
 		lang: "zh_CN", // 设置 Twikoo 评论系统语言为英文
 	},
 };
@@ -394,14 +394,14 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
-		"http://43.139.163.131:3000/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
+		"http://meting.solmount.top/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
 	id: "MBsRSg1ebrBtNr9bVVA01v", // 歌单ID
 	server: "subsonic", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
 };
 
 export const footerConfig: FooterConfig = {
-	enable: false, // 是否启用Footer HTML注入功能
+	enable: true, // 是否启用Footer HTML注入功能
 	customHtml: "", // HTML格式的自定义页脚信息，例如备案号等，默认留空
 	// 也可以直接编辑 FooterConfig.html 文件来添加备案号等自定义内容
 	// 注意：若 customHtml 不为空，则使用 customHtml 中的内容；若 customHtml 留空，则使用 FooterConfig.html 文件中的内容
