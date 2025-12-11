@@ -93,20 +93,19 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/16.jpg",
-				"/assets/desktop-banner/11.jpg",
+				"/assets/desktop-banner/25.jpg",
+				"/assets/desktop-banner/23.jpg",
+				"/assets/desktop-banner/24.jpg",
+				"/assets/desktop-banner/13.jpg",
 				"/assets/desktop-banner/7.jpg",
-				"/assets/desktop-banner/8.jpg",
-				"/assets/desktop-banner/9.jpg",
-				"/assets/desktop-banner/14.jpg",
+				"/assets/desktop-banner/11.jpg",
+				"/assets/desktop-banner/26.jpg",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
-				"/assets/mobile-banner/5.webp",
-				"/assets/mobile-banner/6.webp",
+				"/assets/mobile-banner/7.jpg",
+				"/assets/mobile-banner/8.jpg",
+				"/assets/mobile-banner/9.jpg",
+				"/assets/mobile-banner/10.jpg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -192,9 +191,9 @@ export const siteConfig: SiteConfig = {
 		},
 		cjkFont: {
 			// 中日韩字体 - 作为回退字体
-			fontFamily: "萝莉体 第二版",
+			fontFamily: "思源黑体",
 			fontWeight: "500",
-			localFonts: ["萝莉体 第二版.ttf"],
+			localFonts: ["思源黑体.ttf"],
 			enableCompress: true, // 启用字体子集优化，减少字体文件大小
 		},
 	},
@@ -203,12 +202,12 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
-			"/assets/desktop-banner/5.webp",
-			"/assets/desktop-banner/6.webp",
+			"/assets/desktop-banner/21.jpg",
+			"/assets/desktop-banner/17.jpg",
+			"/assets/desktop-banner/22.jpg",
+			"/assets/desktop-banner/16.jpg",
+			"/assets/desktop-banner/27.jpg",
+			"/assets/desktop-banner/24.jpg",
 		], // 桌面横幅图片
 		mobile: [
 			"/assets/mobile-banner/1.webp",
@@ -395,8 +394,8 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://meting.solmount.top/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "14349700825", // 歌单ID
-	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
+	id: "MBsRSg1ebrBtNr9bVVA01v", // 歌单ID
+	server: "subsonic", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
 };
 
