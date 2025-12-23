@@ -20,6 +20,12 @@ const diaryData: DiaryItem[] = [
 		images: ["/images/diary/2.jpg", "/images/diary/3.jpg"],
 		tags: ["心得"],
 	},
+	{
+		id: 2,
+		content: "网站备案今天全部完成。",
+		date: "2025-12-23T16:00:00Z",
+		mood: "😊",
+	},
 ];
 
 // 获取日记统计数据
