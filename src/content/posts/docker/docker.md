@@ -59,7 +59,7 @@ CMD ["node", "/app/node.js"]
 # 2. 构建Docker镜像
 在终端中导航到项目根目录，然后运行以下命令来构建Docker镜像：
 :::note  
-注意不要网络最后的 .
+注意不要忘了最后的 .
 :::
 ```bash
 docker build -t meting:2.0 .
