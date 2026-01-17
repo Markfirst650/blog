@@ -623,9 +623,10 @@ export const widgetConfigs = {
 export const umamiConfig = {
 	enabled: true, // 是否显示Umami统计
 	apiKey:
-		import.meta.env.UMAMI_API_KEY || "api_gyELvue0O1HfZNwGCj36Tb5sdgzJw7qH", // API密钥优先从环境变量读取，否则使用配置文件中的值
-	baseUrl: "https://api.umami.is", // Umami Cloud API地址
+		import.meta.env.UMAMI_API_KEY ||
+		"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3ZWJzaXRlSWQiOiI4NjdlMzNmYi1jYzZmLTQ0NmEtODAzYy1kNWU3NTZiN2FhODkiLCJpYXQiOjE3Njg2NDM1Mjd9.byA6ZlsEyUzcXt1NekTzL4xTxqTshX59Tzd-M8L8bUs", // API密钥优先从环境变量读取，否则使用配置文件中的值
+	baseUrl: "https://umami.solmount.top/api", // Umami Cloud API地址
 	scripts: `
-<script defer src="https://cloud.umami.is/script.js" data-website-id="7d30c0c4-e8ae-45f5-9dc7-674bb4c29311"></script>
+<script defer src="https://umami.solmount.top/script.js" data-website-id="867e33fb-cc6f-446a-803c-d5e756b7aa89"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;

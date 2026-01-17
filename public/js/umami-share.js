@@ -1,6 +1,6 @@
 ((global) => {
 	const cacheKey = "umami-share-cache";
-	const cacheTTL = 3600_000; // 1h
+	const cacheTTL = 600_000; // 1分钟
 
 	/**
 	 * 获取网站统计数据
@@ -24,11 +24,11 @@
 		}
 
 		const currentTimestamp = Date.now();
-		const statsUrl = `${baseUrl}/v1/websites/${websiteId}/stats?startAt=0&endAt=${currentTimestamp}`;
+		const statsUrl = `${baseUrl}/websites/${websiteId}/stats?startAt=0&endAt=${currentTimestamp}`;
 
 		const res = await fetch(statsUrl, {
 			headers: {
-				"x-umami-api-key": apiKey,
+				"x-umami-share-token": apiKey,
 			},
 		});
 
@@ -65,11 +65,11 @@
 		startAt = 0,
 		endAt = Date.now(),
 	) {
-		const statsUrl = `${baseUrl}/v1/websites/${websiteId}/stats?startAt=${startAt}&endAt=${endAt}&path=${encodeURIComponent(urlPath)}`;
+		const statsUrl = `${baseUrl}/websites/${websiteId}/stats?startAt=${startAt}&endAt=${endAt}&path=${encodeURIComponent(urlPath)}`;
 
 		const res = await fetch(statsUrl, {
 			headers: {
-				"x-umami-api-key": apiKey,
+				"x-umami-share-token": apiKey,
 			},
 		});
 
